@@ -11,5 +11,7 @@ typedef enum logic [2:0] {
     SHL = 3'b110,
     SHR = 3'b111
 } operation_t;
+
+parameter int BIT_WIDTH = 8;
     
 endpackage
