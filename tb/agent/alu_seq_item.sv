@@ -9,6 +9,10 @@ class alu_seq_item extends uvm_sequence_item;
     rand logic [BIT_WIDTH-1:0] B;
     rand operation_t           op;
 
+    logic [BIT_WIDTH-1:0] result;
+    logic                 zero;
+    logic                 cout;
+
     `uvm_object_utils_begin(alu_seq_item)
         `uvm_field_int(A, UVM_ALL_ON)
         `uvm_field_int(B, UVM_ALL_ON)
