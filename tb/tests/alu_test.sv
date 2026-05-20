@@ -1,4 +1,5 @@
 `include "uvm_macros.svh"
+`include "../sequences/alu_base_seq.sv"
 
 import alu_pkg::*;
 import uvm_pkg::*;
