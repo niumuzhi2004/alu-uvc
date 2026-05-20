@@ -18,8 +18,10 @@ class alu_test extends uvm_test;
     endfunction
 
     task run_phase(uvm_phase phase);
+        alu_base_seq seq;
         phase.raise_objection(this);
-        // create sequence and start it on sequencer
+        seq = alu_base_seq::type_id::create("seq");
+        seq.start(env.agent.sequencer);
         phase.drop_objection(this);
     endtask
 
