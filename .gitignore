@@ -25,6 +25,8 @@ xsim.dir/
 xsim_*.pb
 xsim.pb
 *.pb
+xsim.covdb/
+sim/dfx_runtime.txt
 
 # ModelSim/QuestaSim
 *.mti

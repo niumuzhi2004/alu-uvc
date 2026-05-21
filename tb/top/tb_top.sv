@@ -2,6 +2,7 @@
 
 import alu_pkg::*;
 import uvm_pkg::*;
+import alu_tb_pkg::*;
 
 module tb_top();
 

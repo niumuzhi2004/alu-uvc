@@ -1,8 +1,3 @@
-`include "uvm_macros.svh"
-
-import alu_pkg::*;
-import uvm_pkg::*;
-
 class alu_seq_item extends uvm_sequence_item;
     
     rand logic [BIT_WIDTH-1:0] A;

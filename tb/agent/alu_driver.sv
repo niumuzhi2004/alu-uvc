@@ -1,8 +1,3 @@
-`include "uvm_macros.svh"
-
-import alu_pkg::*;
-import uvm_pkg::*;
-
 class alu_driver extends uvm_driver #(alu_seq_item);
     `uvm_component_utils(alu_driver)
 

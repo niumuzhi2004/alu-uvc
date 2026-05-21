@@ -5,18 +5,7 @@ exec xvlog -sv ../rtl/alu_pkg.sv
 exec xvlog -sv ../rtl/alu.sv
 
 # UVM files
-exec xvlog -sv -L uvm ../tb/agent/alu_if.sv
-exec xvlog -sv -L uvm ../tb/agent/alu_sequencer.sv
-exec xvlog -sv -L uvm ../tb/agent/alu_driver.sv
-exec xvlog -sv -L uvm ../tb/agent/alu_monitor.sv
-exec xvlog -sv -L uvm ../tb/agent/alu_agent.sv
-
-exec xvlog -sv -L uvm ../tb/env/alu_env.sv
-exec xvlog -sv -L uvm ../tb/env/alu_coverage.sv
-exec xvlog -sv -L uvm ../tb/env/alu_scoreboard.sv
-
-exec xvlog -sv -L uvm ../tb/sequence/alu_base_seq.sv
-exec xvlog -sv -L uvm ../tb/test/alu_test.sv
+exec xvlog -sv -L uvm ../tb/alu_tb_pkg.sv
 exec xvlog -sv -L uvm ../tb/top/tb_top.sv
 
 

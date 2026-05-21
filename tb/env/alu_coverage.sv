@@ -1,8 +1,3 @@
-`include "uvm_macros.svh"
-
-import alu_pkg::*;
-import uvm_pkg::*;
-
 class alu_coverage extends uvm_subscriber #(alu_seq_item);
     `uvm_component_utils(alu_coverage)
 
@@ -59,12 +54,12 @@ class alu_coverage extends uvm_subscriber #(alu_seq_item);
         alu_covergroup = new();
     endfunction
 
-    function void write(alu_seq_item item);
-        A    = item.A;
-        B    = item.B;
-        op   = item.op;
-        zero = item.zero;
-        cout = item.cout;
+    function void write(alu_seq_item t);
+        A    = t.A;
+        B    = t.B;
+        op   = t.op;
+        zero = t.zero;
+        cout = t.cout;
         alu_covergroup.sample();
     endfunction
 

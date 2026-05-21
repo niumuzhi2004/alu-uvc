@@ -1,5 +1,3 @@
-import alu_pkg::*;
-
 interface alu_if #( parameter BIT_WIDTH = 8 ) ( input logic clk );
 
     logic [BIT_WIDTH-1:0] A;

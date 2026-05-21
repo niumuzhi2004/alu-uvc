@@ -1,9 +1,3 @@
-`include "uvm_macros.svh"
-`include "../sequences/alu_base_seq.sv"
-
-import alu_pkg::*;
-import uvm_pkg::*;
-
 class alu_test extends uvm_test;
     `uvm_component_utils(alu_test)
 
