@@ -1,3 +1,9 @@
+## STEP 0: Clean Previous Simulation Data
+
+file delete -force xsim.covdb
+file delete -force xsim.dir
+
+
 ## STEP 1: Analyze Source Files
 
 # RTL files

@@ -6,7 +6,7 @@ class alu_base_seq extends uvm_sequence #(alu_seq_item);
     endfunction
 
     task body();
-        repeat (20) begin
+        repeat (100) begin
             req = alu_seq_item::type_id::create("req");
             start_item(req);
             if (!req.randomize()) begin
