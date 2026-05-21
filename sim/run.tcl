@@ -25,4 +25,7 @@ exec xsim tb_top_snapshot \
     -runall \
     -log sim.log
 
+# generate coverage report
+exec xcrg -report_format text -dir xsim.covdb/tb_top_snapshot -report_dir coverage_report
+
 exit
