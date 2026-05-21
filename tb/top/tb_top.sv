@@ -21,6 +21,10 @@ module tb_top();
     );
 
     initial begin
+        alu_if_inst.A = 0;
+        alu_if_inst.B = 0;
+        alu_if_inst.op = ADD; // default operation
+        
         uvm_config_db #(virtual alu_if)::set(null, "uvm_test_top.*", "vif", alu_if_inst);
         run_test();
     end
