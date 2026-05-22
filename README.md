@@ -1,4 +1,4 @@
-# ALU UVC - Universal Verification Component
+# ALU UVM Verification Component
 
 ## Overview
 This project implements a simple **UVM (Universal Verification Methodology) verification component** for an 8-bit Arithmetic Logic Unit (ALU).
@@ -29,10 +29,10 @@ It supports the following operations:
 - **UVC** - agent (driver, monitor, and sequencer) and sequence item
 - **Scoreboard** - checks result with reference model
 - **Coverage** - functional covergroups for op, A, B, zero, cout, and opxzero cross coverage
-- **Sequence** - 100 constrained random + 8 directed testing transactions
+- **Sequence** - 200 constrained random + 8 directed testing transactions
 
 ## Results
-- 108 transactions per run
+- 208 transactions per run
 - 100% functional coverage achieved
 
 ## Requirements
