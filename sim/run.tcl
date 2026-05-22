@@ -2,7 +2,7 @@
 
 file delete -force xsim.covdb
 file delete -force xsim.dir
-
+file delete -force coverage_report
 
 ## STEP 1: Analyze Source Files
 
@@ -12,6 +12,7 @@ exec xvlog -sv ../rtl/alu.sv
 
 # UVM files
 exec xvlog -sv -L uvm ../tb/alu_tb_pkg.sv
+exec xvlog -sv -L uvm ../tb/agent/alu_if.sv
 exec xvlog -sv -L uvm ../tb/top/tb_top.sv
 
 

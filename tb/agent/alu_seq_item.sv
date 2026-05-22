@@ -26,8 +26,12 @@ class alu_seq_item extends uvm_sequence_item;
 
     // coverage-driven constraint for A and B to hit corner cases
     constraint corner_cases {
-        A dist { {BIT_WIDTH{1'b0}} := 10, {BIT_WIDTH{1'b1}} := 10 };
-        B dist { {BIT_WIDTH{1'b0}} := 10, {BIT_WIDTH{1'b1}} := 10 };
+        A dist { 0 := 10, {BIT_WIDTH{1'b1}} := 10, [ 1 : ({BIT_WIDTH{1'b1}}-1) ] :/ 20 };
+        B dist { 0 := 10, {BIT_WIDTH{1'b1}} := 20, [ 1 : ({BIT_WIDTH{1'b1}}-1) ] :/ 20 };
+    }
+
+    constraint op_dist {
+        op dist { ADD := 20, SUB := 20, AND := 10, OR := 10, XOR := 10, NOT := 10, SHL := 10, SHR := 10 };
     }
 
     function new(string name = "alu_seq_item");
