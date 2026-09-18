@@ -16,12 +16,7 @@ class alu_seq_item extends uvm_sequence_item;
 
     // operation is within the valid values
     constraint op_valid {
-        op inside { ADD, SUB, AND, OR, XOR, NOT, SHL, SHR };
-    }
-
-    // B is not needed for NOT, SHL, and SHR
-    constraint single_operand_ops {
-        (op == NOT || op == SHL || op == SHR) -> B == 0;
+        op inside { ADD, SUB, AND, OR, XOR, NAND, NOR, SLT };
     }
 
     // coverage-driven constraint for A and B to hit corner cases
@@ -31,7 +26,7 @@ class alu_seq_item extends uvm_sequence_item;
     }
 
     constraint op_dist {
-        op dist { ADD := 20, SUB := 20, AND := 10, OR := 10, XOR := 10, NOT := 10, SHL := 10, SHR := 10 };
+        op dist { ADD := 20, SUB := 20, AND := 10, OR := 10, XOR := 10, NAND := 10, NOR := 10, SLT := 10 };
     }
 
     function new(string name = "alu_seq_item");

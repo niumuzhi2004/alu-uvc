@@ -12,14 +12,14 @@ class alu_coverage extends uvm_subscriber #(alu_seq_item);
         option.per_instance = 1;
 
         cp_op: coverpoint op {
-            bins add    = {ADD};
-            bins sub    = {SUB};
-            bins and_op = {AND};
-            bins or_op  = {OR};
-            bins xor_op = {XOR};
-            bins not_op = {NOT};
-            bins shl    = {SHL};
-            bins shr    = {SHR};
+            bins add     = {ADD};
+            bins sub     = {SUB};
+            bins and_op  = {AND};
+            bins or_op   = {OR};
+            bins xor_op  = {XOR};
+            bins nand_op = {NAND};
+            bins nor_op  = {NOR};
+            bins slt     = {SLT};
         }
 
         cp_A: coverpoint A {

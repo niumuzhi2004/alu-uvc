@@ -21,9 +21,9 @@ It supports the following operations:
 - **AND** - Logical AND operation between two operands
 - **OR** - Logical OR operation between two operands
 - **XOR** - Logical XOR operation between two operands
-- **NOT** - Bitwise complement of an operand
-- **SHL** - Arithmetic left shift operation
-- **SHR** - Arithmetic right shift operation
+- **NAND** - Logical NAND operation between two operands
+- **NOR** - Logical NOR operation between two operands
+- **SLT** - Set on Less Than: result LSB is 1 if A < B, else 0
 
 ## Testbench Architecture
 - **UVC** - agent (driver, monitor, and sequencer) and sequence item
