@@ -40,7 +40,8 @@ Any of the following tools is supported:
 | Tool | Version |
 |---|---| 
 | Xilinx Vivado | xsim v2025.2 (UVM 1.2) | 
-| QuestaSim | vsim v10.4c (UVM 1.1d) |
+| Siemens QuestaSim | vsim v10.4c (UVM 1.1d) |
+| Synopsys VCS | VCS 2025.06 (UVM 1.1d) |
 
 ## How to Run
 For Vivado: 
@@ -53,6 +54,13 @@ For QuestaSim:
 ```cmd
 cd sim
 vsim -c -do run_vsim.tcl
+```
+
+For VCS:
+```bash
+cd sim
+chmod +x run_vcs.sh
+./run_vcs.sh
 ```
 
 > Coverage report generated at `sim/coverage_report/`
