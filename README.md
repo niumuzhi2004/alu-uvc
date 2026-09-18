@@ -36,15 +36,23 @@ It supports the following operations:
 - 100% functional coverage achieved
 
 ## Requirements
+Any of the following tools is supported:
 | Tool | Version |
 |---|---| 
-| Xilinx Vivado | XSIM v2025.2 |
-| UVM | UVM 1.2 (within Vivado) |
+| Xilinx Vivado | xsim v2025.2 (UVM 1.2) | 
+| QuestaSim | vsim v10.4c (UVM 1.1d) |
 
 ## How to Run
+For Vivado: 
 ```cmd
 cd sim
-vivado -mode batch -source run.tcl
+vivado -mode batch -source run_xsim.tcl
 ```
 
-> Coverage report generated at `sim/coverage_report/functionalCoverageReport/xcrg_func_cov_report.txt`
+For QuestaSim:
+```cmd
+cd sim
+vsim -c -do run_vsim.tcl
+```
+
+> Coverage report generated at `sim/coverage_report/`
