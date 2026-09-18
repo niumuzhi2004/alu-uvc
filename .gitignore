@@ -14,12 +14,21 @@
 vivado*.backup.jou
 vivado*.backup.log
 
-#QuestaSim-generated files
+# QuestaSim-generated files
 /sim/transcript
 /sim/uvm/
 *.ini
 *.ucdb
 
+# VCS-generated files
+/sim/csrc
+/sim/coverage_report
+/sim/simv.daidir
+/sim/simv.vdb
+/sim/simv
+*.log
+*.key
+*.h
 
 # Simulation files
 work/
@@ -35,15 +44,6 @@ xsim.pb
 xsim.covdb/
 sim/dfx_runtime.txt
 coverage_report/
-
-# ModelSim/QuestaSim
-*.mti
-*.rec
-*.qdb
-
-# VCS
-*.vpd
-*.v.d
 
 # Generated reports and documentation
 reports/
